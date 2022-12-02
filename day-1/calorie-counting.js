@@ -15,10 +15,7 @@ function main() {
     console.log("First part solution: ", max);
 
     const orderedCalories = totalCalories.sort((a, b) => b - a);
-    const topThreeSum = orderedCalories.reduce(
-      (total, curr, idx) => (idx <= 2 ? total + curr : total),
-      0
-    );
+    const topThreeSum = orderedCalories.reduce((total, curr, idx) => (idx <= 2 ? total + curr : total), 0);
     console.log("Second part solution: ", topThreeSum);
   } catch (error) {
     console.error(error);
